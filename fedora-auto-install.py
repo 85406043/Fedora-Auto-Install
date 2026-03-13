@@ -320,8 +320,5 @@ def hacking():
         time.sleep(1)
 
 
-
-
-
 check_rpmfusion(password)
 menu()
