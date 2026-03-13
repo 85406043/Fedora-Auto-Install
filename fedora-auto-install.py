@@ -79,12 +79,11 @@ def check_rpmfusion(password):
     )
 
 def menu():
-  #loop
   while True:
     time.sleep(1)
     limpar()
     #--- Menu do programa ---
-    menu = input("""Opções do sistema:
+    menu = input("""--- Opções do sistema ---
       [ 1 ] Atualizar
       [ 2 ] Instalar Nvidia Drivers
       [ 3 ] Fedora Gaming
@@ -133,6 +132,7 @@ def menu():
 
   # --- OPÇÕES DO MENU ---
 
+
 # --- CASE 1 ---
 def update():
   print("Ola! Atualizando o sistema...")
@@ -149,12 +149,12 @@ def update():
 def driversNvidia():
   while True:
     limpar()
-    menuDriver = input("""
-            [ 1 ] Drivers Recentes
-            [ 2 ] Drivers Legacy (Model 600/700)
-            [ 3 ] Drivers Legacy (Model 400/500)
-            [ 0 ] Voltar ao menu
-            => """)
+    menuDriver = input("""--- Drivers Nvidia ---
+      [ 1 ] Drivers Recentes
+      [ 2 ] Drivers Legacy (Model 600/700)
+      [ 3 ] Drivers Legacy (Model 400/500)
+      [ 0 ] Voltar ao menu
+      => """)
 
     match menuDriver:
       case "0":
@@ -215,7 +215,7 @@ def appsGame():
 def hacking():
   while True:
     limpar()
-    menuFerramentas = input("""
+    menuFerramentas = input("""--- Ferramentas Hacking ---
       [ 1 ] Softwares (hydra, hashcat ...)
       [ 2 ] Utilitários (nmap, whois ...)
       [ 0 ] Voltar
