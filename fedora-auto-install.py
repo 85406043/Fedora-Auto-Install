@@ -12,6 +12,7 @@ def limpar():#limpar
     ["clear"]
   )
 
+# --- instala o proton plus ---
 def instalar_proton():
   subprocess.run(
     [
